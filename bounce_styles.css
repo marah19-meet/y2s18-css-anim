@@ -3,6 +3,24 @@ body {
     background: #4DC9CC;
 }
 
+@keyframes bounce{
+    0%{
+        opacity: 0;
+        transform: scale(0.10)
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1)
+    }
+    100%{
+        opacity: 0;
+        transform: scale(0.10)
+    }
+
+
+
+}
+
 .header {
     font-family: sans-serif;
     color: white;
@@ -15,5 +33,7 @@ svg {
     position: absolute;
     left: calc(50% - 50px);
     top: calc(50% - 50px);
+    animation: bounce 2s;
+    animation-iteration-count: infinite;
 }
 
